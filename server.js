@@ -2,7 +2,6 @@ const cors = require('cors');
 const path = require('path')
 // get express
 const express = require('express')
-const path = require('path');
 const app = express();
 
 
@@ -16,11 +15,15 @@ app.use(cors({
         'http://localhost:8000'
     ]
 }))
+
 // middlewear
 app.use(express.json())
+// imports ALL FILES from public:
+app.use(express.static(path.join(__dirname, "public")));  // 2 static:    /style.css, /logo.png
+
 
 app.get('/', (req, res) => {
-     // This sends: public/index.html
+     // This sends: public/index.html 
     res.sendFile(path.join(__dirname, 'public', 'index.html'));
 })
 
