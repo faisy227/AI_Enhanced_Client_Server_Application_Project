@@ -1,0 +1,21 @@
+{
+  "name": "ai_enhanced_client_server_application_project",
+  "version": "1.0.0",
+  "description": "For our lost and found server",
+  "homepage": "https://github.com/faisy227/AI_Enhanced_Client_Server_Application_Project#readme",
+  "bugs": {
+    "url": "https://github.com/faisy227/AI_Enhanced_Client_Server_Application_Project/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/faisy227/AI_Enhanced_Client_Server_Application_Project.git"
+  },
+  "license": "ISC",
+  "author": "Zion-Faith,Luigi,Kunga",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  }
+}
