@@ -1,4 +1,5 @@
 const cors = require('cors');
+const path = require('path')
 // get express
 const express = require('express')
 const path = require('path');
@@ -19,7 +20,8 @@ app.use(cors({
 app.use(express.json())
 
 app.get('/', (req, res) => {
-    res.send("<h1>Hello World!!</h1>")
+     // This sends: public/index.html
+    res.sendFile(path.join(__dirname, 'public', 'index.html'));
 })
 
 app.listen(PORT, () => {
